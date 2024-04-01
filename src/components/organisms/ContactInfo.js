@@ -1,6 +1,7 @@
 import React from 'react';
 
-const ContactInfo = () => {
+const ContactInfo = (index) => {
+    const data = index?.index?.index;
     return (
         <div className="flex flex-wrap">
             <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full lg:px-6 xl:w-6/12">
@@ -20,7 +21,7 @@ const ContactInfo = () => {
                         </p>
 
                         <p className="text-neutral-500 dark:text-neutral-200">
-                            (+855) 087 84 19 63
+                            {data?.phone_number}
                         </p>
                     </div>
                 </div>
@@ -39,7 +40,7 @@ const ContactInfo = () => {
                         </p>
 
                         <p className="text-neutral-500 dark:text-neutral-200">
-                            infor@gmail.com
+                            {data?.email}
                         </p>
                     </div>
                 </div>
@@ -58,7 +59,9 @@ const ContactInfo = () => {
                         <p className="mb-2 font-bold dark:text-white">Telegram</p>
 
                         <p className="text-neutral-500 dark:text-neutral-200">
-                            <a className='text-primary' href='#' target="_blank"> @infor_admin</a>
+                            <a className='text-primary' href='#' target="_blank">
+                                {data?.telegram}
+                            </a>
                         </p>
                     </div>
                 </div>
@@ -80,7 +83,7 @@ const ContactInfo = () => {
                         <p className="mb-2 font-bold dark:text-white">Address</p>
 
                         <p className="text-neutral-500 dark:text-neutral-200">
-                            Phnom Penh, Cambodia
+                            {data?.address}
                         </p>
                     </div>
                 </div>

@@ -1,5 +1,3 @@
-
-import { useLocation, useParams } from 'react-router-dom';
 const API_TOKEN='';
 const API_SECRET='';
 const IP_ADDRESS='http://localhost'

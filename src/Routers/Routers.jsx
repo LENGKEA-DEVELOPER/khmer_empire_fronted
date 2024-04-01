@@ -23,7 +23,7 @@ const Routers = (index) => {
                     <Route path='/civilization' element={<Civilization />} />
                     <Route path='/art' element={<Art />} />
                     <Route path='/about' element={<About />} />
-                    <Route path='/contact' element={<Contact />} />
+                    <Route path='/contact' element={<Contact index={navbar}/>} />
                     <Route path='*' element={<NotFound />} />
                 </Routes>
             <Footer/>

@@ -3,7 +3,8 @@ import { GoogleMap, Title, Typograpy } from '../components/atoms';
 import { BannerContact } from '../components/molecules';
 import { FormContact, ContactInfo } from '../components/organisms';
 
-const Contact = () => {
+const Contact = (index) => {
+
     return (
         <>
             <section className="mb-[2%]">
@@ -30,7 +31,10 @@ const Contact = () => {
                             </div>
                             {/* contact info */}
                             <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12  xl:mt-[50px]">
-                                <ContactInfo />
+                                {index?
+                                    <ContactInfo index={index}/>
+                                    :""
+                                }
                             </div>
                         </div>
                     </div>
