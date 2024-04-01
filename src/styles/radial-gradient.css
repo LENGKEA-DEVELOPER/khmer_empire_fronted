@@ -1,0 +1,18 @@
+.bg-gradient {
+    /* background: #55ACEE;
+    background-image: radial-gradient(circle at 28% 36%, #00c5e3,  #55ACEE 99%); */
+
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+
+    background-color: #f16fa1;
+    background-image: linear-gradient(83deg, #8b55f5, #f16fa1);
+
+    /* background: #ff5d63;
+        background-image: radial-gradient(circle at 28% 36%, #ff9195, #ff5d63 66%); */
+
+
+    /*  background: '#00bba6',
+        backgroundImage: 'radial-gradient(circle at 28% 36%, #00dcc3, #00bba6 66%)', */
+}
