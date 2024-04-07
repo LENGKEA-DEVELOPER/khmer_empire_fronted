@@ -245,7 +245,34 @@ const History = (index) => {
                         :""
                         }
                         
+                        {s9?
+                        <div className="mb-12 grid items-center gap-x-6 md:grid-cols-2 xl:gap-x-12">
+                            <div className="mb-6 md:mb-0">
+                                <div className="relative mb-6 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg  "
+                                    data-te-ripple-init data-te-ripple-color="light">
+                                    <img src={s9?.thumbnail} className="w-full" alt="Louvre" />
+                                    <div
+                                        className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,.15)]">
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div>
+                                <div className='mb-3'>
+                                    <Title title={s9?.title} />
+                                </div>
+                                <p className="mb-6 text-neutral-500  ">
+                                    <small>Published <u>{s9?.created_at}</u> by
+                                        <Link to="/about"> {s9?.created_by}</Link></small>
+                                </p>
+                                <div>
+                                    <Typograpy text={s9?.description} />
+                                </div>
+
+                            </div>
+                        </div>
+                        :""
+                        }
 
                     </div>
 

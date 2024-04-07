@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import Content from "../Routers/Routers"
 import axios from "axios";
 import { IP_ADDRESS, PORT, URL } from "../Config";
-
 const Index = () => {
 
     const [index,setindex] = useState([]);  
